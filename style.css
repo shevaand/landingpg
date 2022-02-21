@@ -17,13 +17,15 @@ time {
     color: #cccc;
 }
 
-.menu hr {
-    margin-left: 20px;
-    margin-right: 20px;
+.nav_menu {
     margin-top: 50px;
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
+}
+
+.menu {
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: center;
+    border-top: 1px solid #e6e6e6;
 }
 
 .menu ul {
@@ -33,17 +35,18 @@ time {
 }
 
 .menu li {
-
+    margin-right: 30px;
     list-style-type: none;
     text-transform: uppercase;
 }
 
 .menu li :first-child {
-    padding-left: 20px;
+    margin-left: 20px;
+    margin-block-start: 0;
 }
 
 .menu li :last-child {
-    padding-right: 20px;
+    margin-block-end: 0;
 }
 
 .btn_color {
@@ -69,19 +72,33 @@ time {
     margin-top: 10px;
 }
 
+.head_info {
+    height: 580px;
+}
+
+.image_bcg {
+    height: 580px;
+}
+
 .image_bcg img{
     position: relative;
     width: 100%;
     height: 580px;
 }
 
+.sldr {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    top: -520px;
+    padding-left: 40px;
+}
+
 .slider_info {
-    position: absolute;
-	top: 260px;
     max-width: 360px;
     background-color: #f7f7f7;
     opacity: 0.8;
-    margin-left: 100px;
     padding: 0px 30px 10px 30px;
 }
 
@@ -100,7 +117,8 @@ time {
 .information {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .lft_block {
@@ -330,12 +348,12 @@ i {
 }
 
 .img_footer img {
-    height: 560px;
+    height: 580px;
 }
 
 .img_footer label {
       position: absolute;
-      top: 460px;
+      top: 385px;
       left: 0;
       width: 100%;
       margin-left: 20px;
@@ -344,6 +362,7 @@ i {
 
 .advertising {
     display: flex;
+    justify-content: center;
     margin-bottom: 70px;
 
     margin-left: 20px;
@@ -373,7 +392,7 @@ i {
     align-items: center;
     background-color: #fff;
     margin-left: 15px;
-    width: 100%;
+    width: 746px;
 }
 
 .banner p {
@@ -389,11 +408,18 @@ footer {
 }
 
 .footer_information {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
     padding-top: 50px;
+}
+
+.footer_deff {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.name_title {
+    margin-left: 20px;
 }
 
 .name{
@@ -425,6 +451,12 @@ footer {
     color: #fff;
 }
 
+.postscript {
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: start;
+    border-top: 1px solid #e6e6e6;
+}
 
 .ps {
     color: #949494;
@@ -434,6 +466,10 @@ footer {
 .btn_all {
     display: flex;
     justify-content: space-between;
+}
+
+.social_foot {
+    margin-right: 20px;
 }
 
 .social {
@@ -633,12 +669,12 @@ footer {
     .information {
         display: inline-block;
         width: 100%;
-        margin-left: 24%;
+        
     }
 
     .rght_block {
-        margin-left: 0;
-        margin-top: 25px;
+        margin: 0 auto;
+        padding-top: 20px;
     }
     
 }
